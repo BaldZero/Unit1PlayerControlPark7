@@ -9,6 +9,8 @@ public class PlayerControllerX : MonoBehaviour
     public float verticalInput;
     public float horizontalInput;
 
+    //public GameObject propeller; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,6 @@ public class PlayerControllerX : MonoBehaviour
 
         // tilt the plane up/down based on up/down arrow keys
         transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime * horizontalInput);
+        //propeller.transform.Rotate(Vector3.forward * speed * verticalInput);
     }
 }
